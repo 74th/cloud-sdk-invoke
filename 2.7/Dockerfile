@@ -78,3 +78,5 @@ RUN set -ex; \
 RUN pip install --no-cache-dir virtualenv
 
 CMD ["python2"]
+
+RUN pip install pyinvoke
