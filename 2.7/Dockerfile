@@ -1,5 +1,11 @@
 FROM google/cloud-sdk:228.0.0
 
+# https://www.rosehosting.com/blog/how-to-install-python-3-6-4-on-debian-9/amp/
+RUN apt-get install -y make build-essential libssl-dev zlib1g-dev
+RUN apt-get install -y libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm
+RUN apt-get install -y libncurses5-dev  libncursesw5-dev xz-utils tk-dev
+RUN apt-get install -y wget
+
 # copy from https://github.com/docker-library/python/blob/39c500cc8aefcb67a76d518d789441ef85fc771f/2.7/stretch/Dockerfile
 
 # ensure local python is preferred over distribution python

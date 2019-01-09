@@ -2,6 +2,12 @@ FROM google/cloud-sdk:228.0.0
 
 ENV CLOUDSDK_PYTHON /usr/bin/python
 
+# https://www.rosehosting.com/blog/how-to-install-python-3-6-4-on-debian-9/amp/
+RUN apt-get install -y make build-essential libssl-dev zlib1g-dev
+RUN apt-get install -y libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm
+RUN apt-get install -y libncurses5-dev  libncursesw5-dev xz-utils tk-dev
+RUN apt-get install -y wget
+
 # copy from https://github.com/docker-library/python/blob/ab8b829cfefdb460ebc17e570332f0479039e918/3.7/stretch/Dockerfile
 
 # ensure local python is preferred over distribution python
