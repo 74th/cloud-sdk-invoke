@@ -1,4 +1,4 @@
-FROM google/cloud-sdk
+FROM google/cloud-sdk:228.0.0
 
 # copy from https://github.com/docker-library/python/blob/39c500cc8aefcb67a76d518d789441ef85fc771f/2.7/stretch/Dockerfile
 

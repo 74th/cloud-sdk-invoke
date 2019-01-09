@@ -1,4 +1,4 @@
-FROM google/cloud-sdk
+FROM google/cloud-sdk:228.0.0
 
 ENV CLOUDSDK_PYTHON /usr/bin/python
 
