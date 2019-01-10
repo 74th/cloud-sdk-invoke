@@ -83,6 +83,6 @@ RUN set -ex; \
 # install "virtualenv", since the vast majority of users of this image will want it
 RUN pip install --no-cache-dir virtualenv
 
-CMD ["python2"]
+ENV INVOKE_VERSION 1.2.0
 
-RUN pip install pyinvoke
+RUN pip install invoke==$INVOKE_VERSION

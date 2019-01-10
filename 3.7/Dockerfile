@@ -91,6 +91,6 @@ RUN set -ex; \
 	\) -exec rm -rf '{}' +; \
 	rm -f get-pip.py
 
-CMD ["python3"]
+ENV INVOKE_VERSION 1.2.0
 
-RUN pip install pyinvoke
+RUN pip install invoke==$INVOKE_VERSION
